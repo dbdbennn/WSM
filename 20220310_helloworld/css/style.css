@@ -3,12 +3,21 @@
 li {
     color: teal;
 }
-.korea {
-    color: crimson !important;
-}
 .incheon {
     color:orange;
 }
+.korea {
+    color: crimson;
+}
 #leader {
     color: violet;
+}
+li:nth-child(1){ /* 1부터 시작 */
+    text-decoration: underline;
+}
+h2+h3 { /* h2 형제 중 첫번째 h3 */
+    background-color: skyblue;
+}
+h2~h3 { /* h2 형제 중 여러 h3 */
+    font-size: 40px;
 }
