@@ -1,24 +1,30 @@
 /* 우선순위: 포괄 < 구체 */
 /* 우선순위: TAG < class < id <<< !important */
 /* 우선순위: 같은 급일 때는 위 < 아래 쓴 코드 */
-li {
-    color: teal;
+body > li {
+  /* > : 자식, 띄어쓰기 : 자손 */
+  color: teal;
 }
 .incheon {
-    color:orange;
+  color: orange;
 }
-.korea {
-    color: crimson;
+.korea,
+h6 {
+  /*콤마 : 함께 */
+  color: crimson;
 }
 #leader {
-    color: violet;
+  color: violet;
 }
-li:nth-child(1){ /* 1부터 시작 */
-    text-decoration: underline;
+li:nth-chi(1) {
+  /* 1부터 시작 */
+  text-decoration: underline;
 }
-h2+h3 { /* h2 형제 중 첫번째 h3 */
-    background-color: skyblue;
+h2 + h3 {
+  /* h2 형제 중 첫번째 h3 */
+  background-color: skyblue;
 }
-h2~h3 { /* h2 형제 중 여러 h3 */
-    font-size: 40px;
+h2 ~ h3 {
+  /* h2 형제 중 여러 h3 */
+  font-size: 40px;
 }
