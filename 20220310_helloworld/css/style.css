@@ -5,6 +5,12 @@ body > li {
   /* > : 자식, 띄어쓰기 : 자손 */
   color: teal;
 }
+
+body > ul > ul:nth-child(2) {
+  /* 찾는 요소 우클릭 > 검사 > 개발자도구 > 우클릭 > Copy > Copy selector */
+  background-color: rgb(248, 191, 219);
+}
+
 .incheon {
   color: orange;
 }
