@@ -14,23 +14,40 @@ body > ul > ul:nth-child(2) {
 .incheon {
   color: orange;
 }
+
 .korea,
 h6 {
   /*콤마 : 함께 */
   color: crimson;
 }
+
 #leader {
   color: violet;
 }
+
+li:nth-child(4) {
+  /* 
+  first-child: 첫째 자식
+  first-child: 첫째 자식
+  last-child: 막내 자식 
+  */
+}
+
 li:nth-chi(1) {
   /* 1부터 시작 */
   text-decoration: underline;
 }
+
 h2 + h3 {
   /* h2 형제 중 첫번째 h3 */
   background-color: skyblue;
 }
+
 h2 ~ h3 {
   /* h2 형제 중 여러 h3 */
   font-size: 40px;
+}
+
+body > ul > ul > li:nth-child(3) {
+  text-decoration: underline;
 }
