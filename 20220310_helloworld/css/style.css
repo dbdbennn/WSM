@@ -25,13 +25,13 @@ h6 {
   color: violet;
 }
 
-li:nth-child(4) {
+/* li:nth-child(4) {
   /* 
   first-child: 첫째 자식
   first-child: 첫째 자식
   last-child: 막내 자식 
-  */
-}
+  
+} */
 
 li:nth-chi(1) {
   /* 1부터 시작 */
