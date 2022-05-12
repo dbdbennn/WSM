@@ -1,0 +1,42 @@
+justify-content : 메인축의 배치
+- space-around : 각 아이템의 양쪽 공백을 같게 한다.
+- space-between : 사이의 거리를 같게하고 끝으로 정렬한다.
+- center : 가운데
+- flex-end : 오른쪽으로
+- flex-start : 왼쪽으로
+
+flex-direction : 방향
+- row-reverse : 순서가 뒤바뀐다(start와 end의 순서도 뒤바뀐다).
+- column : 가로->세로(가로축도 세로축으로 바뀐다) 
+
+align-items : 교차축의 배치
+- flex-end : 밑으로
+
+order : 자기 자리에서 순서를 숫자로 직접 변경함
+
+align-self : 특정 아이템만 교차축의 배치. align-items의 인자를 받는다.
+
+flex-wrap : 내려쓰기
+- wrap : 내려쓰기
+- wrap-reverse : 반대로 정렬해 내려쓰기
+
+flex-flow : flex-direction (+) flex-wrap
+
+align-content : 여러 줄 사이의 간격을 지정할 수 있다.
+- flex-start : 여러 줄들을 컨테이너의 꼭대기에 정렬
+- flex-end : 여러 줄들을 컨테이너의 바닥에 정렬
+- center : 여러 줄들을 세로선 상의 가운데에 정렬
+- space-between : 여러 줄들 사이에 동일한 간격을 둔다.
+- space-around : 여러 줄들 주위에 동일한 간격을 둔다.
+- stretch : 여러 줄들을 컨테이너에 맞도록 늘린다.
+
+*flex-direction: 방향
+*justify-content: 메인축의 배치
+*align-items: 교차축의 배치
+order: 자기자리에서 순서 변경
+align-self: 그 아
+이템 교차축의 배치
+*flex-wrap: 내려쓰기
+flex-flow: flex-direction flex-wrap
+align-content: 내려썼을 때 교차축의 배치
+  (flex-wrap: wrap;)
