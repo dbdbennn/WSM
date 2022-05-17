@@ -2,6 +2,7 @@
     --red: crimson;
     --yellow: gold;
     --green: yellowgreen;
+    --font-color: #333;
 }
 
 * {
@@ -10,4 +11,12 @@
     content box: content의 크기만으로 전체 크기를 계산한다. */
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
