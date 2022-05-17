@@ -19,4 +19,16 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--font-color);
+}
+
+header {
+    --border-width: 4px;
+}
+.nav-list {
+    border: var(--border-width) solid var(--yellow);
+}
+
+.nav-list li {
+    border: var(--border-width) solid var(--green);
 }
