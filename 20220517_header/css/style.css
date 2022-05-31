@@ -26,9 +26,22 @@ header {
     --border-width: 4px;
 }
 .nav-list {
+    display: flex;
+    gap: 16px;
     border: var(--border-width) solid var(--yellow);
 }
 
 .nav-list li {
     border: var(--border-width) solid var(--green);
+}
+
+.nav-list li {
+    flex-grow: 0; /* 기본값: 0 
+    글자인 컨텐츠는 0이 좋음 왜냐하면 글자크기에 딱 맞게 만들어주는게 좋음
+    버튼은 1이 좋음 왜냐하면 글자 크기에 상관없이 다같이 비례하는게 좋음*/
+    flex-shrink: 0; /* 기본값: 1 
+    글자인 컨텐츠는 0이 좋음 */
+    flex-basis: 200px; /* 기본값: auto */
+    flex: 0 0 200px;
+    border: 1px solid red; /* 선두께 선모양(solid) 선색깔; */
 }

@@ -1,0 +1,5 @@
+.nav-list li {
+    flex-grow: 1; /* 기본값: 0 */
+    flex-shrink: 1; /* 기본값: 1 */
+    flex-basis: auto; /* 기본값: auto */
+}
