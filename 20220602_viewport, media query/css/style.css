@@ -1,0 +1,30 @@
+body {
+    background-color: #81bef7;
+    font-size: 4rem;
+}
+/* <\ 1080px : tablet */
+@media screen and (max-width: 1023px) {
+    body{
+        background-color: darkseagreen;
+        font-size: 2rem;
+    }
+    /* 글자 더 작게 2rem */
+}
+/* <= 420px : mobile */
+
+@media screen and (max-width: 419px){
+    body{
+        background-color: lightcoral;
+        font-size: 1rem;
+    }
+}
+
+/* >= 420px: tablet */
+@media screen and (min-width: 420px){
+
+}
+
+/* >= 1024px: desktop */
+@media screen and (min-width: 1024px){
+
+}
