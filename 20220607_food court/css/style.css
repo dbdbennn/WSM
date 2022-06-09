@@ -34,13 +34,13 @@
 }
 
 /* BASE */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     position: relative; /* 기준이 되는 position */
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -56,11 +56,11 @@ h3 {
 
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
