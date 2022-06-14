@@ -1,16 +1,16 @@
 // toggle hidden menu
-function toggleMenu(toggleId, navListId) {
+const toggleMenu = function (toggleId, navListId) {
   const toggle = document.getElementById(toggleId);
   const navList = document.getElementById(navListId);
 
-  function clickHandler() {
+  const clickHandler = function () {
     navList.classList.toggle("show-menu");
-  }
+  };
 
   if (toggle && navList) {
     toggle.addEventListener("click", clickHandler);
   }
-}
+};
 toggleMenu("nav-toggle", "nav-list");
 
 /* Functions */
