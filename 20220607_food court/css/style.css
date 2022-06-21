@@ -77,6 +77,7 @@ header {
   position: fixed; /* header 위치 고정 스크롤해도 안움직임 */
   left: 0;
   right: 0;
+  top: 0;
 }
 
 nav {
@@ -102,6 +103,10 @@ nav i {
 .nav-list {
   display: flex; /* 기본값: 수평 방향 */
   column-gap: 1.25rem; /* 20px */
+}
+/* HOME */
+main{
+  margin: 88px 0 0 0;
 }
 
 /* breakpoints */
