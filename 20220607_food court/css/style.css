@@ -74,6 +74,9 @@ img {
 
 header {
   background-color: var(--first-color);
+  position: fixed; /* header 위치 고정 스크롤해도 안움직임 */
+  left: 0;
+  right: 0;
 }
 
 nav {
