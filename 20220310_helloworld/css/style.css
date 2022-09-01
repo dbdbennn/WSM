@@ -33,7 +33,7 @@ h6 {
   
 } */
 
-li:nth-chi(1) {
+li:nth-child(1) {
   /* 1부터 시작 */
   text-decoration: underline;
 }
