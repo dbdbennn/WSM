@@ -1,15 +1,42 @@
+body {
+    height: 100%;
+}
+
+#season {
+    max-width: 600px;
+    height: 600px;
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    /* grid-template-columns: repeat(2, 50%); */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 30% 70%;
+}
+
 .spring {
     background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .summer {
     background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fall {
     background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .winter {
     background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
