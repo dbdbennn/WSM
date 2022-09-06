@@ -1,0 +1,82 @@
+/* BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    /* 기준이 되는 position */
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+/* nav */
+.container {
+    margin-left: 0.875rem;
+    margin-right: 0.875rem;
+}
+
+header {
+    background-color: var(--first-color);
+    position: fixed;
+    /* header 위치 고정 스크롤해도 안움직임 */
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+nav {
+    height: 2.75rem;
+    display: flex;
+    /* 기본값: 수평 방향 */
+    justify-content: space-between;
+    /* 양쪽정렬 */
+    align-items: center;
+    /* 교차축 가운데 */
+}
+
+nav i {
+    color: #fff;
+    font-size: var(--h3-font-size);
+    /* 아이콘 좀 크게 */
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-toggle {
+    display: none;
+    /* 안 보이게 */
+}
+
+.nav-list {
+    display: flex;
+    /* 기본값: 수평 방향 */
+    column-gap: 1.25rem;
+    /* 20px */
+}
