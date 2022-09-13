@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+}
+
+.grid-item {
+    border: 1px solid black;
+}
+
+.grid-item:nth-child(9) {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid-item:nth-child(11) {
+    grid-row: 2 / 4;
+    grid-column: 5 / 6
+        /* 5 */
+    ;
+}
+
+.grid-item:nth-child(18) {
+    grid-area: 4 / 2 / 6 / 3;
+}
