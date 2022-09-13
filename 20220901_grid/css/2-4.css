@@ -1,9 +1,30 @@
 .grid-container {
     display: grid;
     grid-template-columns: 80px repeat(5, 1fr);
+    max-width: 800px;
+    height: 400px;
+}
+
+.days-of-the-week {
+    background-color: skyblue;
+    color: aliceblue;
+}
+
+.blank {
+    background-color: bisque;
+}
+
+h1 {
+    max-width: 800px;
+    text-align: center;
 }
 
 .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     border: 1px solid black;
 }
 
