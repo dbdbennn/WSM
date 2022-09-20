@@ -1,0 +1,30 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+#prev-btn,
+#next-btn {
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#calendar {
+    max-width: 800px;
+    height: 600px;
+    font-size: var(--h2-font-size);
+}
+
+.grid-container,
+.date-grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
