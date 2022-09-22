@@ -4,8 +4,8 @@
     column-gap: 40px;
 }
 
-#prev-btn,
-#next-btn {
+#prev_btn,
+#next_btn {
     border: 2px solid #eee;
     border-radius: 8px;
     padding: 8px;
