@@ -1,3 +1,9 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -13,7 +19,6 @@
 
 #calendar {
     max-width: 800px;
-    height: 600px;
     font-size: var(--h2-font-size);
 }
 
@@ -27,4 +32,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu-grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.breakfast,
+.lunch,
+.dinner {
+    width: 180px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.25rem;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Calendar</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/dynamic.css">
+</head>
+<body>
+    <main>
+        <div class="calendar">
+            <div class="flex-container">
+                <div id="prev_btn"><</div>
+                <h1><span id="year"></span>년 <span id="month"></span>월</h1>
+                <div id="next_btn">></div>
+            </div>
+            <div id="calendar">
+                <div class="grid-container days-of-the-week">
+                    <div class="grid-item">일</div>
+                    <div class="grid-item">월</div>
+                    <div class="grid-item">화</div>
+                    <div class="grid-item">수</div>
+                    <div class="grid-item">목</div>
+                    <div class="grid-item">금</div>
+                    <div class="grid-item">토</div>
+                </div>
+
+                <div class="date-grid-container">
+                    <!-- js에서 날짜 생성-->
+                </div>
+            </div>
+        </div>
+            
+        <div class="menu-grid-container">
+            <div class="breakfast">
+                <h1>조식</h1>
+                <div id="breakfast"></div>
+            </div>
+            <div class="lunch">
+                <h1>중식</h1>
+                <div id="lunch"></div>
+            </div>
+            <div class="dinner">
+                <h1>석식</h1>
+                <div id="dinner"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/dynamic.js"></script>
+    <script src="js/openapi.js"></script>
+</body>
+</html>

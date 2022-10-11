@@ -18,5 +18,11 @@ const SD_SCHUL_CODE = "7010569";    // 미림여자정보과학고등학교
 let MMEAL_SC_CODE = 2;              // 중식
 let MLSV_YMD = "20221011";          // YYYYMMDD
 const Type = "json";
-let url = `https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=${ATPT_OFCDC_SC_CODE}&SD_SCHUL_CODE=${SD_SCHUL_CODE}&MMEAL_SC_CODE=${MMEAL_SC_CODE}&MLSV_YMD=${MLSV_YMD}&Type=${Type}&KEY=${KEY}`;
+let url = `https://open.neis.go.kr/hub/mealServiceDietInfo?`+
+`&ATPT_OFCDC_SC_CODE=${ATPT_OFCDC_SC_CODE}`+
+`&SD_SCHUL_CODE=${SD_SCHUL_CODE}`+
+`&MMEAL_SC_CODE=${MMEAL_SC_CODE}`+
+`&MLSV_YMD=${MLSV_YMD}`+
+`&Type=json`+
+`&KEY=${KEY}`;
 console.log(url);
