@@ -52,13 +52,62 @@ const handler = (e) => {
         `&SD_SCHUL_CODE=${SD_SCHUL_CODE}`+
         // `&MMEAL_SC_CODE=${MMEAL_SC_CODE}`+ 조중석 합쳐서 나옴
         `&MLSV_YMD=${MLSV_YMD}`+
-        `&Type=json`+
+        `&Type=${Type}`+
         `&KEY=${KEY}`;
 
     console.log(url);
-
     urlToJSON(url);
 }
+
+const urlToJSON = (url) => {
+    // XMLHttpRequest 객체 만들자
+    let xhr = new XMLHttpRequest();
+
+    // callback
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            //success
+            console.log("성공"+xhr.response);
+            showMenu(xhr.response);
+        } else {
+            // fail
+            // console.log(xhr.status);            
+        }
+    }
+
+    // 요청을 보낼 방식 정하자. true: 비동기
+    xhr.open("GET", url, true);
+    
+    // 요청하자
+    xhr.send();
+
+    // json 받아서 HTML 조식, 중식, 석식에 보여주자
+    const showMenu = (jsonString) => {
+        console.log(jsonString);
+        // jsonString -> json
+        let json = JSON.parse(jsonString); // String을 json으로 번역 ex) "{'key': 'value'}" -> {'key': 'value'}
+        
+        try{
+            if (json['mealServiceDietInfo'][0]['head'][1]['RESULT']['CODE']=='INFO-000') { //응답이 제대로 왔으면
+                // json -> HTML
+                breakfast.innerHTML = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM'];
+                lunch.innerHTML = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM']
+                dinner.innerHTML = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM']
+            } else { // 응답이 이상하면
+                // 없음 표시하자
+                breakfast.innerHTML = "없음";
+                lunch.innerHTML = "없음";
+                dinner.innerHTML = "없음";
+            }
+        } catch { // 문제가 생기면 {'mealServiceDietInfo'} 아니고 {'RESULT'}로 옴
+            breakfast.innerHTML = "없음";
+            lunch.innerHTML = "없음";
+            dinner.innerHTML = "없음";
+        }
+    }; 
+
+}
+
 for (let gridItem of gridItems) {
     gridItem.onmouseover = handler;
     // gridItem.addEventListener("mouseover", handler);
