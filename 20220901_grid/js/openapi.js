@@ -92,7 +92,7 @@ const urlToJSON = (url) => {
                 // json -> HTML
                 try{
                     let breakfastData = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM']; 
-                    breakfast.innerHTML = breakfastData.replace(/\([0-9중\.]*\)/g, ""); // 정규표현식 : (문자 숫자나 .문자)문자
+                    breakfast.innerHTML = breakfastData.replace(/\([0-9\.]*\)/g, ""); // 정규표현식 : (문자 숫자나 .문자)문자
                     // (            \(
                     // 숫자 한글자 [0123456789]
                     //  .           \.
