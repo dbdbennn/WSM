@@ -15,7 +15,9 @@ main {
     border: 2px solid #eee;
     border-radius: 8px;
     padding: 8px;
+    cursor: pointer;
 }
+
 
 #calendar {
     max-width: 800px;
@@ -58,4 +60,10 @@ h1 {
 #lunch,
 #dinner {
     font-size: 0.5rem;
+}
+
+.date-grid-container .grid-item:hover {
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    cursor: pointer;
 }
