@@ -40,6 +40,12 @@ const setCalendar = (year, month) => {
     // 1일 : grid-column-start: 요일 + 1;
     let firstDateDiv = dateGridContainerDiv.getElementsByClassName("grid-item")[0];
     firstDateDiv.style.gridColumnStart = firstDay + 1;
+
+    // event
+    for (let gridItem of gridItems) {
+        gridItem.onmouseover = handler;
+        // gridItem.addEventListener("mouseover", handler);
+    }
 }
 // prevMonth 함수
 const prevMonth = () => {
