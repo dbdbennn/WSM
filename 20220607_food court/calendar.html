@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+  
+          <a href="" class="nav-logo">
+            <i class="bx bxl-facebook"></i>
+          </a>
+  
+          <div class="nav-menu">
+            <ul class="nav-list" id="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link"> HOME </a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="calendar.html" class="nav-link"> CALENDAR </a>
+              </li>
+              <li class="nav-item">
+                <a href="map.html" class="nav-link"> MAP </a>
+              </li>
+              <li class="nav-item">
+                <a href="board.html" class="nav-link"> BOARD </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calendar">
+            <div class="flex-container">
+                <div id="prev_btn"><</div>
+                <h1><span id="year"></span>년 <span id="month"></span>월</h1>
+                <div id="next_btn">></div>
+            </div>
+            <div id="calendar">
+                <div class="grid-container days-of-the-week">
+                    <div class="grid-item">일</div>
+                    <div class="grid-item">월</div>
+                    <div class="grid-item">화</div>
+                    <div class="grid-item">수</div>
+                    <div class="grid-item">목</div>
+                    <div class="grid-item">금</div>
+                    <div class="grid-item">토</div>
+                </div>
+
+                <div class="date-grid-container">
+                    <!-- js에서 날짜 생성-->
+                </div>
+            </div>
+        </div>
+            
+        <div class="menu-grid-container">
+            <div class="breakfast">
+                <h1>조식</h1>
+                <div id="breakfast"></div>
+            </div>
+            <div class="lunch">
+                <h1>중식</h1>
+                <div id="lunch"></div>
+            </div>
+            <div class="dinner">
+                <h1>석식</h1>
+                <div id="dinner"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/calendar.js"></script>
+    <script src="js/openapi.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

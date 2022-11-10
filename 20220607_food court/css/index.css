@@ -81,52 +81,5 @@ h3 {
 
 /* 2K & 4K */
 
-/* tablet */
-@media screen and (max-width: 600px) {
-
-  /* width가 600px 이하면 아래 css 적용 */
-  .nav-toggle {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    /* 위치 무시, 로고 가운데 정렬을 위함 */
-  }
-
-  .nav-list {
-    position: absolute;
-    top: 44px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: lightgrey;
-    height: 0;
-    overflow: hidden;
-    transition: .2s;
-  }
-
-  .nav-item {
-    padding: 0.5rem 1rem;
-    /* 위 오 아 왼 */
-    text-align: center;
-    /* 가운데 정렬 */
-    border-bottom: 1px solid white;
-    /* 아래 선 */
-  }
-
-  .nav-link {
-    display: block;
-    /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자 */
-    color: var(--title-color);
-  }
-
-  .nav-logo {
-    margin: auto auto;
-    /* 로고 가운데 정렬. 양 옆 공간에 같은 공간을 주는 것은 auto */
-  }
-
-  .show-menu {
-    height: 164px;
-  }
-}
 
 /* mobile */

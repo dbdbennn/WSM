@@ -1,0 +1,71 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+#prev_btn,
+#next_btn {
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+#calendar {
+    max-width: 800px;
+    font-size: var(--h2-font-size);
+}
+
+.grid-container,
+.date-grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.breakfast,
+.lunch,
+.dinner {
+    width: 180px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+#breakfast,
+#lunch,
+#dinner {
+    font-size: 0.5rem;
+}
+
+.date-grid-container .grid-item:hover {
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
