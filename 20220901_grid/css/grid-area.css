@@ -1,0 +1,23 @@
+* {
+    border: 1px solid bisque;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+        "nav main sidebar";
+
+}
+
+.nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
