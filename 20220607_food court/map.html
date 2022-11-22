@@ -1,0 +1,74 @@
+<!-- 버전을 말하는 것이다. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/map.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+
+        <a href="" class="nav-logo">
+          <i class="bx bxl-facebook"></i>
+        </a>
+
+        <div class="nav-menu">
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"> HOME </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="calendar.html" class="nav-link"> CALENDAR </a>
+            </li>
+            <li class="nav-item">
+              <a href="map.html" class="nav-link"> MAP </a>
+            </li>
+            <li class="nav-item">
+              <a href="board.html" class="nav-link"> BOARD </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="map">
+        <div class="title title-a">A 배식대</div>
+        <div class="title title-b">B 배식대</div>
+        <div class="seat seat-a">좌석A</div>
+        <div class="seat seat-b">좌석B</div>
+        <div class="arraw-up">↑</div>
+        <fieldset class="legend">
+            <legend>학년</legend>
+            <div>1학년 
+                <span class="color-1">초록</span>
+                </div>
+            <div>2학년
+                <span class="color-2">노랑</span>
+            </div>
+            <div>3학년
+                <span class="color-4">파랑</span>
+            </div>
+        </fieldset>
+    </main>
+
+    <!-- main.js -->
+    <script src="js/nav.js"></script>
+  </body>
+</html>
