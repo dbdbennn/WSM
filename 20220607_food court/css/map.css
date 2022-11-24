@@ -1,0 +1,118 @@
+#map {
+    margin-top: 80px;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "title-a    .....   title-b   legend"
+        "seat-a     arrow   seat-b    legend"
+    ;
+    grid-template-columns: 1fr 80px 1fr auto;
+    grid-template-rows: 100px 400px;
+    width: 800px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.title-a {
+    grid-area: title-a;
+    background-color: greenyellow;
+
+}
+
+.title-b {
+    grid-area: title-b;
+    background-color: skyblue;
+}
+
+.legend {
+    grid-area: legend;
+    padding: 8px;
+    margin-left: 40px;
+    height: fit-content;
+    /* 높이를 내용물에 맞게 */
+}
+
+.arrow-up {
+    grid-area: arrow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+}
+
+.seat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px gray;
+    margin-top: 40px;
+}
+
+.seat-a {
+    grid-area: seat-a;
+    background: linear-gradient(yellowgreen, greenyellow);
+}
+
+.seat-b {
+    grid-area: seat-b;
+    background: linear-gradient(deepskyblue, skyblue);
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+}
+
+.color-1 {
+    background-color: greenyellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.color-2 {
+    background-color: gold;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.color-3 {
+    background-color: skyblue;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* 0~600px까지 적용됨 */
+    .grid-container {
+        grid-template-columns: 1fr 40px 1fr auto;
+    }
+
+    .seat {
+        font-size: 1.5rem;
+    }
+
+    .arrow-up {
+        font-size: 3.5rem;
+    }
+
+    .legend {
+        margin-left: 20px;
+    }
+}
